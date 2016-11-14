@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="132dp"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/shout_grid_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@android:color/black"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/alert_dark_frame"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/shout_grid_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Merino Wool Slouchy Hat, Winter
+Hat, Chunky Textured Knit Ht"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/home_feed_card_user_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="John Smith - 2 hours ago"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/home_feed_card_country_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/ic_chat"/>
+
+            <ImageView
+                android:id="@+id/home_feed_card_item_icon_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginEnd="20dp"
+                android:paddingBottom="6dp"
+                android:paddingEnd="6dp"
+                android:paddingRight="6dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/ic_chat"/>
+
+            <ImageView
+                android:id="@+id/home_feed_card_chat_iv"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:paddingBottom="6dp"
+                android:paddingTop="6dp"
+                android:src="@drawable/ic_chat"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/home_feed_card_type_label_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|end"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/type_bg"
+            android:paddingBottom="4dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="2dp"
+            android:text="Offer"/>
+
+        <TextView
+            android:id="@+id/shout_grid_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="16dp"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:text="34USD"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"/>
+
+    </FrameLayout>
+
+</LinearLayout>

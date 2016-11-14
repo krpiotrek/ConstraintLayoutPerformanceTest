@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="132dp">
+
+    <ImageView
+        android:id="@+id/shout_grid_image_view"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:background="@android:color/black"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sample_03"/>
+
+    <TextView
+        android:id="@+id/shout_grid_title_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/shout_grid_image_view"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/shout_grid_image_view"
+        android:layout_toRightOf="@+id/shout_grid_image_view"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="Merino Wool Slouchy Hat, Winter
+Hat, Chunky Textured Knit Ht"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/home_feed_card_user_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/shout_grid_image_view"
+        android:layout_toRightOf="@+id/shout_grid_image_view"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="John Smith - 2 hours ago"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/home_feed_card_type_label_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/type_bg"
+        android:paddingBottom="4dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="2dp"
+        android:text="Offer"/>
+
+    <ImageView
+        android:id="@+id/home_feed_card_country_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/shout_grid_image_view"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_toEndOf="@+id/shout_grid_image_view"
+        android:layout_toRightOf="@+id/shout_grid_image_view"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:src="@drawable/ic_chat"
+    />
+
+    <ImageView
+        android:id="@+id/home_feed_card_item_icon_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/shout_grid_image_view"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/home_feed_card_country_iv"
+        android:layout_toRightOf="@+id/home_feed_card_country_iv"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:tint="@color/colorPrimary"
+        android:src="@drawable/ic_star"
+    />
+
+    <ImageView
+        android:id="@+id/home_feed_card_chat_iv"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@id/shout_grid_image_view"
+        android:layout_toEndOf="@+id/home_feed_card_item_icon_iv"
+        android:layout_toRightOf="@+id/home_feed_card_item_icon_iv"
+        android:paddingBottom="6dp"
+        android:paddingEnd="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:tint="@color/colorAccent"
+        android:src="@drawable/ic_info"
+    />
+
+    <TextView
+        android:id="@+id/shout_grid_price_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_toEndOf="@+id/home_feed_card_chat_iv"
+        android:layout_toRightOf="@+id/home_feed_card_chat_iv"
+        android:gravity="end"
+        android:maxLines="1"
+        android:paddingBottom="2dp"
+        android:text="$23333333334USD"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14sp"/>
+
+</RelativeLayout>
